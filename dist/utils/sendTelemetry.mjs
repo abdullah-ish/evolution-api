@@ -1,0 +1,2 @@
+import r from"axios";import n from"fs";var o=JSON.parse(n.readFileSync("./package.json","utf8")),E=async e=>{if(!(process.env.TELEMETRY_ENABLED===void 0||process.env.TELEMETRY_ENABLED==="true")||e==="/")return;let t={route:e,apiVersion:`${o.version}`,timestamp:new Date},s=process.env.TELEMETRY_URL&&process.env.TELEMETRY_URL!==""?process.env.TELEMETRY_URL:"https://log.evolution-api.com/telemetry";r.post(s,t).then(()=>{}).catch(()=>{})};export{E as sendTelemetry};
+//# sourceMappingURL=sendTelemetry.mjs.map

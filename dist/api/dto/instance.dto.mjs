@@ -1,0 +1,2 @@
+function n(e){return class extends e{}}function t(e){return class extends e{}}var o=class extends t(n(class{})){};var s=class extends o{},r=class{};export{s as InstanceDto,r as SetPresenceDto};
+//# sourceMappingURL=instance.dto.mjs.map

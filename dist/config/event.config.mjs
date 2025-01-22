@@ -1,0 +1,2 @@
+import e from"eventemitter2";var r=parseInt(process.env.EVENT_EMITTER_MAX_LISTENERS,10)||50,s=new e({delimiter:".",newListener:!1,ignoreErrors:!1,maxListeners:r});export{s as eventEmitter};
+//# sourceMappingURL=event.config.mjs.map

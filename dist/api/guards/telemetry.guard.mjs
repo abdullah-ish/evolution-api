@@ -1,0 +1,2 @@
+import i from"axios";import a from"fs";var p=JSON.parse(a.readFileSync("./package.json","utf8")),n=async e=>{if(!(process.env.TELEMETRY_ENABLED===void 0||process.env.TELEMETRY_ENABLED==="true")||e==="/")return;let r={route:e,apiVersion:`${p.version}`,timestamp:new Date},t=process.env.TELEMETRY_URL&&process.env.TELEMETRY_URL!==""?process.env.TELEMETRY_URL:"https://log.evolution-api.com/telemetry";i.post(t,r).then(()=>{}).catch(()=>{})};var s=class{collectTelemetry(o,r,t){n(o.path),t()}},T=s;export{T as default};
+//# sourceMappingURL=telemetry.guard.mjs.map
